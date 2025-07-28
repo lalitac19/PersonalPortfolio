@@ -14,59 +14,59 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "Modern online store with intuitive user experience and seamless checkout process.",
-    category: "web",
-    tags: ["Web Design", "UI/UX"],
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    title: "AI-Powered Community Platform",
+    description: "Built a machine learning-driven platform that connects professionals across the UAE and UK tech ecosystem.",
+    category: "tech",
+    tags: ["Machine Learning", "Community Building"],
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 2,
-    title: "Fitness Tracking App",
-    description: "Comprehensive fitness application with workout tracking and social features.",
-    category: "app",
-    tags: ["Mobile App", "Health"],
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=700"
+    title: "Strategic Tech Consulting",
+    description: "Led digital transformation initiatives for emerging startups, focusing on ML integration and scalable architecture.",
+    category: "strategy",
+    tags: ["Tech Strategy", "Digital Transformation"],
+    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=700"
   },
   {
     id: 3,
-    title: "Brand Identity Design",
-    description: "Complete brand identity including logo, color palette, and brand guidelines.",
-    category: "branding",
-    tags: ["Branding", "Logo Design"],
-    image: "https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500"
+    title: "Cross-Border Innovation Network",
+    description: "Founded and scaled a community network connecting tech innovators between UAE and UK markets.",
+    category: "community",
+    tags: ["Community Building", "Innovation"],
+    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500"
   },
   {
     id: 4,
-    title: "Creative Portfolio",
-    description: "Artist portfolio website showcasing creative works with elegant presentation.",
-    category: "web",
-    tags: ["Portfolio", "Creative"],
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=650"
+    title: "ML-Driven Business Intelligence",
+    description: "Developed predictive analytics solutions that helped businesses make data-driven strategic decisions.",
+    category: "tech",
+    tags: ["Machine Learning", "Analytics"],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=650"
   },
   {
     id: 5,
-    title: "Task Management App",
-    description: "Productivity app designed to help teams collaborate and manage projects efficiently.",
-    category: "app",
-    tags: ["Productivity", "Team Tools"],
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    title: "Startup Incubation Program",
+    description: "Created and managed a comprehensive program supporting early-stage tech startups in emerging markets.",
+    category: "strategy",
+    tags: ["Entrepreneurship", "Mentorship"],
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 6,
-    title: "Restaurant Branding",
-    description: "Complete restaurant brand identity including logo, menu design, and marketing materials.",
-    category: "branding",
-    tags: ["Branding", "Restaurant"],
-    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=550"
+    title: "International Tech Conference",
+    description: "Organized multi-day tech conference bringing together thought leaders from MENA and European markets.",
+    category: "community",
+    tags: ["Events", "Thought Leadership"],
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=550"
   },
 ];
 
 const filterButtons = [
   { id: "all", label: "All Projects" },
-  { id: "web", label: "Web Design" },
-  { id: "app", label: "App Design" },
-  { id: "branding", label: "Branding" },
+  { id: "tech", label: "Tech & ML" },
+  { id: "strategy", label: "Strategy" },
+  { id: "community", label: "Community Building" },
 ];
 
 export default function PortfolioSection() {

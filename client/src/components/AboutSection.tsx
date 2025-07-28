@@ -14,12 +14,12 @@ export default function AboutSection() {
   };
 
   const personalDetails = [
-    { icon: "fas fa-calendar", label: "Birthday", value: "January 1, 1990" },
-    { icon: "fas fa-globe", label: "Website", value: "www.yourwebsite.com" },
-    { icon: "fas fa-phone", label: "Phone", value: "+1 (555) 123-4567" },
-    { icon: "fas fa-map-marker-alt", label: "Location", value: "New York, USA" },
-    { icon: "fas fa-graduation-cap", label: "Degree", value: "Bachelor's" },
-    { icon: "fas fa-envelope", label: "Email", value: "hello@yourname.com" },
+    { icon: "fas fa-briefcase", label: "Role", value: "Founder & Tech Strategist" },
+    { icon: "fas fa-globe", label: "LinkedIn", value: "linkedin.com/in/lalita-chopra" },
+    { icon: "fas fa-users", label: "Focus", value: "Community Building & ML" },
+    { icon: "fas fa-map-marker-alt", label: "Location", value: "UAE & UK 🇦🇪🇬🇧" },
+    { icon: "fas fa-rocket", label: "Expertise", value: "Tech Strategy & Innovation" },
+    { icon: "fas fa-envelope", label: "Email", value: "lalitac@icloud.com" },
   ];
 
   return (
@@ -60,13 +60,13 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
           >
             <h3 className="font-semibold text-2xl lg:text-3xl text-sage mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              UI/UX Designer & Developer
+              Founder | Community Builder | Tech & ML Strategist
             </h3>
             <p className="text-lg mb-6 leading-relaxed">
-              Welcome to my portfolio! I'm passionate about creating beautiful, functional digital experiences that make a difference. With a keen eye for design and a love for clean code, I transform ideas into engaging websites and applications.
+              Welcome to my portfolio! I'm passionate about building innovative tech solutions and fostering vibrant communities that drive meaningful change. As a founder and strategist, I specialize in leveraging technology and machine learning to solve complex problems and create lasting impact.
             </p>
             <p className="text-lg mb-8 leading-relaxed">
-              My journey in design and development spans several years, during which I've had the privilege of working with diverse clients and projects. I believe in the power of good design to solve problems and create meaningful connections.
+              My journey spans across the UAE and UK, where I've had the privilege of building communities, launching ventures, and developing strategic approaches to technology adoption. I believe in the power of collaboration and innovation to transform industries and create opportunities for growth.
             </p>
 
             {/* Personal Details Grid */}

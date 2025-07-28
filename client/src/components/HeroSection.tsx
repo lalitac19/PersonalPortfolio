@@ -35,7 +35,7 @@ export default function HeroSection() {
           className="font-bold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
-          Your Name
+          Lalita Chopra
         </motion.h1>
         
         <motion.p
@@ -45,7 +45,7 @@ export default function HeroSection() {
           className="text-xl md:text-2xl lg:text-3xl mb-8 font-light"
           style={{ fontFamily: 'Open Sans, sans-serif' }}
         >
-          I'm a <span className="text-accent-blue font-medium">UI/UX Designer & Developer</span>
+          <span className="text-accent-blue font-medium">Founder | Community Builder | Tech & ML Strategist 🇦🇪 & 🇬🇧</span>
         </motion.p>
         
         <motion.button

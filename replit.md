@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern full-stack web application built as a professional portfolio website. The project follows a modular architecture with a React frontend using TypeScript, a Node.js/Express backend, and PostgreSQL database integration through Drizzle ORM. The application showcases UI/UX design work with sections for home, about, portfolio, and contact information.
+This is a modern full-stack web application built as a professional portfolio website for Lalita Chopra. The project follows a modular architecture with a React frontend using TypeScript, a Node.js/Express backend, and PostgreSQL database integration through Drizzle ORM. The application showcases her work as a founder, community builder, and tech & ML strategist with sections for home, about, portfolio, and contact information.
 
 ## User Preferences
 
@@ -36,11 +36,11 @@ Preferred communication style: Simple, everyday language.
 
 ### Frontend Components
 1. **Layout Components**
-   - `Sidebar`: Fixed navigation with profile image and smooth scrolling
-   - `HeroSection`: Full-screen landing with background image overlay
-   - `AboutSection`: Personal information with animated content reveals
-   - `PortfolioSection`: Project showcase with filtering and modal views
-   - `ContactSection`: Contact form with validation and submission handling
+   - `Sidebar`: Fixed navigation with Lalita's profile image and smooth scrolling, LinkedIn/Instagram links
+   - `HeroSection`: Full-screen landing with professional photo as background
+   - `AboutSection`: Personal information showcasing founder and strategist background
+   - `PortfolioSection`: Project showcase featuring tech, strategy, and community building work
+   - `ContactSection`: Simple "Get in touch" button linking to email
 
 2. **UI Library**
    - Complete shadcn/ui component suite (buttons, cards, forms, dialogs, etc.)
@@ -49,10 +49,10 @@ Preferred communication style: Simple, everyday language.
    - Form handling with React Hook Form and Zod validation
 
 3. **Styling System**
-   - CSS custom properties for theme management
+   - CSS custom properties for theme management using brand colors #faf8ef, #222222, #475c55
    - Light/dark mode support
    - Responsive design with mobile-first approach
-   - Professional color palette with cream, sage, and accent blue
+   - Professional color palette with cream background, sage green, and accent blue
 
 ### Backend Components
 1. **Storage Layer**

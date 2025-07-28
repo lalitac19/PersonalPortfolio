@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(46, 55%, 97%);
+  --background: hsl(50, 88%, 97%);
   --foreground: hsl(0, 0%, 13%);
   --sage: hsl(139, 17%, 38%);
   --accent-blue: hsl(199, 75%, 48%);
-  --muted: hsl(46, 20%, 92%);
+  --muted: hsl(50, 20%, 92%);
   --muted-foreground: hsl(139, 17%, 38%);
-  --popover: hsl(46, 55%, 97%);
+  --popover: hsl(50, 88%, 97%);
   --popover-foreground: hsl(0, 0%, 13%);
   --card: hsl(0, 0%, 100%);
   --card-foreground: hsl(0, 0%, 13%);
-  --border: hsl(46, 20%, 88%);
-  --input: hsl(46, 20%, 88%);
+  --border: hsl(50, 20%, 88%);
+  --input: hsl(50, 20%, 88%);
   --primary: hsl(199, 75%, 48%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(46, 20%, 92%);
+  --secondary: hsl(50, 20%, 92%);
   --secondary-foreground: hsl(0, 0%, 13%);
-  --accent: hsl(46, 20%, 92%);
+  --accent: hsl(50, 20%, 92%);
   --accent-foreground: hsl(0, 0%, 13%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
@@ -59,7 +59,7 @@
 
   body {
     @apply font-sans antialiased;
-    background-color: hsl(46, 55%, 97%);
+    background-color: hsl(50, 88%, 97%);
     color: hsl(0, 0%, 13%);
   }
 
@@ -110,7 +110,7 @@
   }
 
   .bg-cream {
-    background-color: hsl(46, 55%, 97%);
+    background-color: hsl(50, 88%, 97%);
   }
 
   .border-sage {

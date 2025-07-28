@@ -10,7 +10,7 @@ export default function Sidebar() {
       let current = "";
       
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
+        const sectionTop = (section as HTMLElement).offsetTop;
         if (window.scrollY >= sectionTop - 200) {
           current = section.getAttribute("id") || "";
         }
@@ -50,7 +50,7 @@ export default function Sidebar() {
             className="w-12 h-12 lg:w-16 lg:h-16 rounded-full object-cover mb-2 lg:mb-4"
           />
           <h2 className="hidden lg:block font-semibold text-lg text-center">
-            Your Name
+            Lalita Chopra
           </h2>
         </div>
 
@@ -87,7 +87,7 @@ export default function Sidebar() {
         <div className="border-t pt-4">
           <div className="flex lg:flex-col justify-center lg:justify-start space-x-4 lg:space-x-0 lg:space-y-3">
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/lalita-chopra/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sage hover:text-accent-blue transition-colors"
@@ -95,7 +95,7 @@ export default function Sidebar() {
               <i className="fab fa-linkedin text-xl"></i>
             </a>
             <a
-              href="https://instagram.com/yourprofile"
+              href="https://www.instagram.com/lalitac17/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sage hover:text-accent-blue transition-colors"
