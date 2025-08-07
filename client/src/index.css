@@ -6,7 +6,7 @@
   --background: hsl(50, 88%, 97%);
   --foreground: hsl(0, 0%, 13%);
   --sage: hsl(139, 17%, 38%);
-  --accent-blue: hsl(199, 75%, 48%);
+  --accent-blue: hsl(139, 17%, 38%);
   --muted: hsl(50, 20%, 92%);
   --muted-foreground: hsl(139, 17%, 38%);
   --popover: hsl(50, 88%, 97%);
@@ -15,7 +15,7 @@
   --card-foreground: hsl(0, 0%, 13%);
   --border: hsl(50, 20%, 88%);
   --input: hsl(50, 20%, 88%);
-  --primary: hsl(199, 75%, 48%);
+  --primary: hsl(139, 17%, 38%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(50, 20%, 92%);
   --secondary-foreground: hsl(0, 0%, 13%);
@@ -31,7 +31,7 @@
   --background: hsl(240, 10%, 3.9%);
   --foreground: hsl(0, 0%, 98%);
   --sage: hsl(139, 17%, 60%);
-  --accent-blue: hsl(199, 75%, 60%);
+  --accent-blue: hsl(139, 17%, 60%);
   --muted: hsl(240, 3.7%, 15.9%);
   --muted-foreground: hsl(240, 5%, 64.9%);
   --popover: hsl(240, 10%, 3.9%);
@@ -40,7 +40,7 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(199, 75%, 60%);
+  --primary: hsl(139, 17%, 60%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(240, 3.7%, 15.9%);
   --secondary-foreground: hsl(0, 0%, 98%);
@@ -106,7 +106,7 @@
   }
 
   .bg-accent-blue {
-    background-color: hsl(199, 75%, 48%);
+    background-color: hsl(139, 17%, 38%);
   }
 
   .bg-cream {
@@ -118,18 +118,18 @@
   }
 
   .border-accent-blue {
-    border-color: hsl(199, 75%, 48%);
+    border-color: hsl(139, 17%, 38%);
   }
 
   .hover\:bg-accent-blue:hover {
-    background-color: hsl(199, 75%, 48%);
+    background-color: hsl(139, 17%, 38%);
   }
 
   .hover\:text-accent-blue:hover {
-    color: hsl(199, 75%, 48%);
+    color: hsl(139, 17%, 38%);
   }
 
   .focus\:ring-accent-blue:focus {
-    --tw-ring-color: hsl(199, 75%, 48%);
+    --tw-ring-color: hsl(139, 17%, 38%);
   }
 }
