@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Profile } from "@/types/Profile";
 import profileImage from "@assets/DSC02272_1752947688416.jpg";
+import Footer from "./Footer";
 
 interface ProfileViewProps {
   profile: Profile;
@@ -14,7 +15,7 @@ export default function ProfileView({ profile, onBack }: ProfileViewProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
       <motion.header
         initial={{ opacity: 0, y: -20 }}
@@ -55,7 +56,7 @@ export default function ProfileView({ profile, onBack }: ProfileViewProps) {
       </motion.header>
 
       {/* Main Profile Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <div className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -188,6 +189,7 @@ export default function ProfileView({ profile, onBack }: ProfileViewProps) {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 }
