@@ -9,7 +9,7 @@ import fitnessImage from "@assets/IMG_3570_1754599117568.jpg";
 const profiles: Profile[] = [
   {
     id: "tech-consulting",
-    title: "Tech Consultant",
+    title: "Tech consultant 👩🏽‍💻",
     description: "Strategic technology advisory and ML implementation",
     image: techConsultingImage,
     email: "tech@lalitachopra.com",
@@ -27,7 +27,7 @@ const profiles: Profile[] = [
   },
   {
     id: "entrepreneur",
-    title: "Entrepreneur",
+    title: "Entrepreneur 🚀",
     description: "Building innovative ventures and communities",
     image: entrepreneurImage,
     email: "ventures@lalitachopra.com",
@@ -71,7 +71,7 @@ const profiles: Profile[] = [
   },
   {
     id: "fitness-enthusiast",
-    title: "Fitness Enthusiast",
+    title: "Wellness Advocate 🧘‍♀️",
     description: "Wellness advocate and active lifestyle promoter",
     image: fitnessImage,
     email: "wellness@lalitachopra.com",

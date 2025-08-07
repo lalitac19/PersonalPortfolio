@@ -70,15 +70,11 @@ export default function ProfileSelector({ profiles, onSelectProfile }: ProfileSe
                 </div>
                 
                 <h3 
-                  className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3"
+                  className="text-lg sm:text-xl font-bold text-gray-800 mb-4 sm:mb-6"
                   style={{ fontFamily: 'Poppins, sans-serif' }}
                 >
                   {profile.title}
                 </h3>
-                
-                <p className="text-sage text-sm leading-relaxed mb-4">
-                  {profile.description}
-                </p>
                 
                 {/* Hover indicator */}
                 <div className="mt-4 sm:mt-6 opacity-0 group-hover:opacity-100 transition-opacity">
