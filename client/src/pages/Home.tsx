@@ -1,19 +1,81 @@
-import Sidebar from "@/components/Sidebar";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import PortfolioSection from "@/components/PortfolioSection";
-import ContactSection from "@/components/ContactSection";
+import { useState } from "react";
+import ProfileSelector from "@/components/ProfileSelector";
+import ProfileView from "@/components/ProfileView";
+import { Profile } from "@/types/Profile";
+
+const profiles: Profile[] = [
+  {
+    id: "tech-consulting",
+    title: "Tech Consulting",
+    description: "Strategic technology advisory and ML implementation",
+    image: "/api/placeholder/150/150",
+    email: "tech@lalitachopra.com",
+    details: {
+      about: "Specializing in digital transformation and machine learning strategy for emerging markets. I help businesses leverage cutting-edge technology to scale and innovate.",
+      skills: ["Machine Learning Strategy", "Digital Transformation", "Tech Architecture", "AI Implementation", "Data Analytics"],
+      experience: [
+        "Led ML integration projects across UAE and UK markets",
+        "Advised 50+ startups on technology strategy",
+        "Built scalable AI solutions for enterprise clients",
+        "Developed predictive analytics platforms"
+      ],
+      contact: "tech@lalitachopra.com"
+    }
+  },
+  {
+    id: "entrepreneur",
+    title: "Entrepreneur",
+    description: "Building innovative ventures and communities",
+    image: "/api/placeholder/150/150",
+    email: "ventures@lalitachopra.com",
+    details: {
+      about: "Passionate about building ventures that create meaningful impact. I focus on community-driven businesses and cross-border innovation between UAE and UK.",
+      skills: ["Startup Development", "Community Building", "Cross-border Business", "Venture Strategy", "Network Building"],
+      experience: [
+        "Founded multiple successful tech ventures",
+        "Built international business communities",
+        "Organized major tech conferences and events",
+        "Mentored 100+ early-stage entrepreneurs"
+      ],
+      contact: "ventures@lalitachopra.com"
+    }
+  },
+  {
+    id: "fitness-enthusiast",
+    title: "Fitness Enthusiast",
+    description: "Wellness advocate and active lifestyle promoter",
+    image: "/api/placeholder/150/150",
+    email: "wellness@lalitachopra.com",
+    details: {
+      about: "Believer in the power of fitness to enhance productivity and mental clarity. I integrate wellness principles into business strategy and daily life.",
+      skills: ["Wellness Coaching", "Fitness Planning", "Mindfulness", "Work-Life Balance", "Health Optimization"],
+      experience: [
+        "Completed multiple marathons and fitness challenges",
+        "Developed wellness programs for tech professionals",
+        "Speaks at wellness and productivity conferences",
+        "Advocates for mental health in entrepreneurship"
+      ],
+      contact: "wellness@lalitachopra.com"
+    }
+  }
+];
 
 export default function Home() {
+  const [selectedProfile, setSelectedProfile] = useState<Profile | null>(null);
+
   return (
     <div className="min-h-screen bg-cream">
-      <Sidebar />
-      <main className="ml-20 lg:ml-64">
-        <HeroSection />
-        <AboutSection />
-        <PortfolioSection />
-        <ContactSection />
-      </main>
+      {selectedProfile ? (
+        <ProfileView 
+          profile={selectedProfile} 
+          onBack={() => setSelectedProfile(null)} 
+        />
+      ) : (
+        <ProfileSelector 
+          profiles={profiles} 
+          onSelectProfile={setSelectedProfile} 
+        />
+      )}
     </div>
   );
 }

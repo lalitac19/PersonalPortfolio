@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern full-stack web application built as a professional portfolio website for Lalita Chopra. The project follows a modular architecture with a React frontend using TypeScript, a Node.js/Express backend, and PostgreSQL database integration through Drizzle ORM. The application showcases her work as a founder, community builder, and tech & ML strategist with sections for home, about, portfolio, and contact information.
+This is a modern full-stack web application built as a professional portfolio website for Lalita Chopra. The project follows a modular architecture with a React frontend using TypeScript, a Node.js/Express backend, and PostgreSQL database integration through Drizzle ORM. The application features a Google-style profile switcher interface showcasing three distinct professional profiles: Tech Consulting, Entrepreneur, and Fitness Enthusiast, each with detailed individual views.
 
 ## User Preferences
 
@@ -35,12 +35,15 @@ Preferred communication style: Simple, everyday language.
 ## Key Components
 
 ### Frontend Components
-1. **Layout Components**
-   - `Sidebar`: Fixed navigation with Lalita's profile image and smooth scrolling, LinkedIn/Instagram links
-   - `HeroSection`: Full-screen landing with professional photo as background
-   - `AboutSection`: Personal information showcasing founder and strategist background
-   - `PortfolioSection`: Project showcase featuring tech, strategy, and community building work
-   - `ContactSection`: Simple "Get in touch" button linking to email
+1. **Core Components**
+   - `ProfileSelector`: Google-style profile switcher with LC logo, "LALITA CHOPRA" heading, and three profile cards
+   - `ProfileView`: Detailed individual profile view with contact options and professional information
+   - `Home`: Main container managing state between profile selection and detailed views
+   
+2. **Profile Structure**
+   - Three distinct profiles: Tech Consulting, Entrepreneur, Fitness Enthusiast
+   - Each profile includes: about section, expertise/skills, key achievements, and contact information
+   - Seamless navigation between profile selector and detailed views
 
 2. **UI Library**
    - Complete shadcn/ui component suite (buttons, cards, forms, dialogs, etc.)
@@ -76,10 +79,10 @@ Preferred communication style: Simple, everyday language.
 ## Data Flow
 
 ### Frontend Data Flow
-1. **Navigation**: Smooth scroll-based navigation between portfolio sections
-2. **Form Handling**: Contact form with validation, submission, and toast feedback
-3. **Animation Triggers**: Intersection Observer API for scroll-based animations
-4. **State Management**: React Query for API calls and server state caching
+1. **Profile Navigation**: State-based switching between profile selector and detailed profile views
+2. **Profile Selection**: Click handlers for navigating to specific professional profiles
+3. **Contact Integration**: Direct email links with pre-populated subject lines for each profile
+4. **Animation System**: Framer Motion for smooth transitions and micro-interactions
 
 ### Backend Data Flow
 1. **Request Processing**: Express middleware chain for parsing and logging
