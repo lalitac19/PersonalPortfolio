@@ -67,8 +67,8 @@ export default function ProfileView({ profile, onBack }: ProfileViewProps) {
           <div className="bg-gradient-to-r from-sage to-accent-blue p-6 sm:p-8 text-white text-center">
             <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white">
               <img
-                src={profileImage}
-                alt="Lalita Chopra"
+                src={profile.image}
+                alt={`Lalita Chopra - ${profile.title}`}
                 className="w-full h-full object-cover"
               />
             </div>

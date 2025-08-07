@@ -18,7 +18,7 @@ export default function Footer() {
     {
       name: "X (Twitter)",
       url: "https://x.com/lalita_c",
-      icon: "fab fa-x-twitter"
+      icon: "fab fa-twitter"
     }
   ];
 

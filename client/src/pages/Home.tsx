@@ -2,13 +2,16 @@ import { useState } from "react";
 import ProfileSelector from "@/components/ProfileSelector";
 import ProfileView from "@/components/ProfileView";
 import { Profile } from "@/types/Profile";
+import techConsultingImage from "@assets/DSC03049_1754599015558.jpg";
+import entrepreneurImage from "@assets/DSC02272 copy_1754598971970.jpg";
+import fitnessImage from "@assets/IMG_3570_1754599117568.jpg";
 
 const profiles: Profile[] = [
   {
     id: "tech-consulting",
     title: "Tech Consulting",
     description: "Strategic technology advisory and ML implementation",
-    image: "/api/placeholder/150/150",
+    image: techConsultingImage,
     email: "tech@lalitachopra.com",
     details: {
       about: "Specializing in digital transformation and machine learning strategy for emerging markets. I help businesses leverage cutting-edge technology to scale and innovate.",
@@ -26,7 +29,7 @@ const profiles: Profile[] = [
     id: "entrepreneur",
     title: "Entrepreneur",
     description: "Building innovative ventures and communities",
-    image: "/api/placeholder/150/150",
+    image: entrepreneurImage,
     email: "ventures@lalitachopra.com",
     details: {
       about: "Passionate about building ventures that create meaningful impact. I focus on community-driven businesses and cross-border innovation between UAE and UK.",
@@ -44,7 +47,7 @@ const profiles: Profile[] = [
     id: "fitness-enthusiast",
     title: "Fitness Enthusiast",
     description: "Wellness advocate and active lifestyle promoter",
-    image: "/api/placeholder/150/150",
+    image: fitnessImage,
     email: "wellness@lalitachopra.com",
     details: {
       about: "Believer in the power of fitness to enhance productivity and mental clarity. I integrate wellness principles into business strategy and daily life.",

@@ -62,11 +62,13 @@ export default function ProfileSelector({ profiles, onSelectProfile }: ProfileSe
               data-testid={`profile-card-${profile.id}`}
             >
               <div className="p-6 sm:p-8 text-center">
-                {/* Profile Avatar Placeholder */}
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-sage to-accent-blue mx-auto mb-4 sm:mb-6 flex items-center justify-center">
-                  <span className="text-white text-lg sm:text-2xl font-bold">
-                    {profile.title.charAt(0)}
-                  </span>
+                {/* Profile Avatar */}
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full mx-auto mb-4 sm:mb-6 overflow-hidden border-2 border-sage">
+                  <img
+                    src={profile.image}
+                    alt={`${profile.title} profile`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 <h3 
