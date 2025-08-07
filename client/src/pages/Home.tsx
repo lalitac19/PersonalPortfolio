@@ -9,7 +9,7 @@ import fitnessImage from "@assets/IMG_3570_1754599117568.jpg";
 const profiles: Profile[] = [
   {
     id: "tech-consulting",
-    title: "Tech Consulting",
+    title: "Tech Consultant",
     description: "Strategic technology advisory and ML implementation",
     image: techConsultingImage,
     email: "tech@lalitachopra.com",
