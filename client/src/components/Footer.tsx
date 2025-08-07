@@ -15,15 +15,11 @@ export default function Footer() {
       url: "https://www.paypal.com/paypalme/lalitachopra", 
       icon: "fab fa-paypal"
     },
-    {
-      name: "X (Twitter)",
-      url: "https://x.com/lalita_c",
-      icon: "fab fa-twitter"
-    }
+
   ];
 
   return (
-    <footer className="bg-white border-t border-gray-200 py-6 sm:py-8">
+    <footer className="bg-cream border-t border-gray-200 py-6 sm:py-8">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col items-center space-y-4">
           {/* Social Links */}

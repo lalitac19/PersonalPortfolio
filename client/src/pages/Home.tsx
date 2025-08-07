@@ -40,7 +40,33 @@ const profiles: Profile[] = [
         "Organized major tech conferences and events",
         "Mentored 100+ early-stage entrepreneurs"
       ],
-      contact: "ventures@lalitachopra.com"
+      contact: "ventures@lalitachopra.com",
+      portfolio: [
+        {
+          name: "Wasta",
+          url: "https://wasta.ai",
+          logo: "/api/placeholder/120/60",
+          description: "AI-powered platform"
+        },
+        {
+          name: "Clean Karma",
+          url: "https://www.instagram.com/cleankarmaproducts/",
+          logo: "/api/placeholder/120/60",
+          description: "Sustainable products"
+        },
+        {
+          name: "Unmapped",
+          url: "https://unmapped.club",
+          logo: "/api/placeholder/120/60",
+          description: "Community platform"
+        },
+        {
+          name: "Table4",
+          url: "https://table4.app",
+          logo: "/api/placeholder/120/60",
+          description: "Dining experience app"
+        }
+      ]
     }
   },
   {

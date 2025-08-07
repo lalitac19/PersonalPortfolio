@@ -40,7 +40,7 @@ export default function ProfileSelector({ profiles, onSelectProfile }: ProfileSe
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-lg sm:text-xl text-sage mb-8 sm:mb-12 md:mb-16 text-center max-w-2xl px-4"
         >
-          Choose a profile to explore different aspects of my professional journey
+          Pick a persona
         </motion.p>
 
         {/* Profile Cards */}

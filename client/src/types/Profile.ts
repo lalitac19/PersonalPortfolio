@@ -1,3 +1,10 @@
+export interface PortfolioCompany {
+  name: string;
+  url: string;
+  logo: string;
+  description?: string;
+}
+
 export interface Profile {
   id: string;
   title: string;
@@ -9,5 +16,6 @@ export interface Profile {
     skills: string[];
     experience: string[];
     contact: string;
+    portfolio?: PortfolioCompany[];
   };
 }

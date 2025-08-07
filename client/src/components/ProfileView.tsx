@@ -166,6 +166,55 @@ export default function ProfileView({ profile, onBack }: ProfileViewProps) {
               </div>
             </section>
 
+            {/* Portfolio Section - Only for Entrepreneur */}
+            {profile.details.portfolio && (
+              <section className="mb-8">
+                <h2 
+                  className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 flex items-center"
+                  style={{ fontFamily: 'Poppins, sans-serif' }}
+                >
+                  <i className="fas fa-rocket mr-2 sm:mr-3 text-sage"></i>
+                  Portfolio
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                  {profile.details.portfolio.map((company, index) => (
+                    <motion.a
+                      key={company.name}
+                      href={company.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block p-4 sm:p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all transform hover:scale-105 border border-gray-100"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      data-testid={`portfolio-${company.name.toLowerCase()}`}
+                    >
+                      <div className="flex items-center justify-center mb-3">
+                        <div className="w-20 h-10 bg-gray-100 rounded-lg flex items-center justify-center border">
+                          <span className="text-sage font-bold text-sm">
+                            {company.name}
+                          </span>
+                        </div>
+                      </div>
+                      <h3 className="font-bold text-gray-800 text-center mb-2">
+                        {company.name}
+                      </h3>
+                      {company.description && (
+                        <p className="text-gray-600 text-sm text-center">
+                          {company.description}
+                        </p>
+                      )}
+                      <div className="mt-3 text-center">
+                        <span className="text-accent-blue text-xs font-medium">
+                          Visit Site →
+                        </span>
+                      </div>
+                    </motion.a>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* Contact Section */}
             <section className="bg-gray-50 rounded-lg p-4 sm:p-6 text-center">
               <h3 
