@@ -112,8 +112,17 @@ Preferred communication style: Simple, everyday language.
 
 ## Deployment Strategy
 
-### Build Process
-1. **Frontend Build**: Vite builds React app to `dist/public` directory
+### Build Process Options
+
+#### Static Deployment (Recommended for Portfolio)
+1. **Static Build**: `npx vite build --config vite.static.config.ts`
+   - Outputs pure static files directly to `dist/` directory
+   - Contains only `index.html` and `assets/` (CSS, JS, images)
+   - No server components or Node.js dependencies
+   - Perfect for portfolio and static websites
+
+#### Full-Stack Deployment (For Dynamic Applications)
+1. **Frontend Build**: Vite builds React app to `dist/` directory
 2. **Backend Build**: esbuild bundles server code to `dist/index.js`
 3. **Database**: Drizzle migrations applied via `npm run db:push`
 
@@ -123,8 +132,17 @@ Preferred communication style: Simple, everyday language.
 - **Database Management**: Drizzle Kit for schema management and migrations
 
 ### Production Deployment
+
+#### Static Deployment (Current Configuration)
+- **Deployment Type**: Static hosting on Replit
+- **Build Command**: Use `npx vite build --config vite.static.config.ts` for pure static build
+- **Public Directory**: `dist/` (contains index.html directly)
+- **Assets**: All CSS, JS, and images served statically from `dist/assets/`
+- **Database**: Not required for static portfolio deployment
+
+#### Full-Stack Deployment (Alternative)
 - **Server Start**: `npm start` runs the production-built Express server
-- **Static Assets**: Express serves built frontend from `dist/public`
+- **Static Assets**: Express serves built frontend from `dist/`
 - **Database**: PostgreSQL connection via `DATABASE_URL` environment variable
 - **Session Storage**: PostgreSQL-backed sessions for scalability
 
