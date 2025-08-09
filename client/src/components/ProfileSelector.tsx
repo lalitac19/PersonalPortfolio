@@ -78,7 +78,7 @@ export default function ProfileSelector({ profiles, onSelectProfile }: ProfileSe
                 
                 {/* Hover indicator */}
                 <div className="mt-4 sm:mt-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-sm font-medium text-[#23252f]">
+                  <span className="text-sm font-medium text-black group-hover:text-sage transition-colors">
                     Click to explore →
                   </span>
                 </div>
